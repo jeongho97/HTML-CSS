@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+p{
+	background-color: #0000ff; /*background-color: property p태그 모두 적용 internal 방식*/
+	color: white;
+}
+#tagName{ /*id로 접근*/
+	font-size: 150%
+}
+
+.tagClass{ /*class로 접근*/
+	background-color: red;
+	color:#ffff00;
+}
+</style>
+
+</head>
+<body>
+<!--
+	CSS Cascading Style Sheet
+	문자의 컬러, 종류, 형태 지정
+	배경화면의 이미지, 컬러지정
+	테두리 설정(border)
+	
+	inline 방식 : tag안에 기입
+	internal 방식 : head tag 정의
+	external 방식 : 외부파일 불러오기
+ -->
+ 
+ <!-- inline -->
+ <p style="font-size: 10pt">p 태그입니다</p>
+ <p>문장 태그입니다</p>
+ 
+ <!-- internal -->
+ <p id="tagName">I can do it</p>
+ <p class="tagClass">success</p>
+ <h3 class="tagClass">success h3 tag</h3>
+ 
+</body>
+</html>
