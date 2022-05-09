@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- form : 전송(입력받은 데이터)->tag
+		textfield,button,textarea,checkbox,fadiobutton -->
+		
+<!-- 		<태그명 attribute명="property명:값"
+
+			<태그명 id=,class=,name=
+			
+			목적:Javascript에서 접근 또는 데이터를 전송
+			id: 현재 페이지에서 한개만이 유효
+			class:다중으로 접근 또는 사용이 가능. CSS (디자인 용도)
+			name: 입력받은 값을 전달
+-->
+
+<p id="pid" class="pclass" name="pname">hello</p>
+<p id="demo" class="pcls" name="pname">world</p>
+<br>
+
+<a href="moveHtml.html">moveHtml.html로 이동</a>
+<br>
+
+<form action="moveHtml.html">
+moveHtml.htm
+<input type="submit" value="이동">
+</form>
+<br><br>
+
+<!-- User Interface(UI) -->
+<form action="login.jsp">
+ID:<input type="text" name="id" values="" title="id를 기입해주세요" size="20" placeholder="id기입">
+<br>
+PW:<input type="password" name="pw" size="20">
+<br>
+<input type="submit" value="로그인">
+<input type="reset" value="초기화"> 
+</form>
+
+<br><br>
+number:<input type="number" max="5" min="1">
+<br>
+날짜:<input type="date">
+<br>
+<input type="datetime">
+<br>
+color:<input type="color" value="#00ff00">
+<br>
+range:<input type="range" max="10" min="0">
+<br>
+search:<input tpye="search">
+
+
+checkbox & radio button
+<br>
+<input type="checkbox" value="패션">패션<br>
+<input type="checkbox" value="음악">음악<br>
+<input type="checkbox" value="게임">게임<br>
+<br>
+
+<input type="radio" value="벤츠" checked="checked">벤츠<br>
+<input type="radio" value="아우디">아우디<br>
+<input type="radio" value="BMW">BMW<br>
+
+<br><br>
+
+<textarea rows="10" cols="30">초기값</textarea>
+
+<br><br>
+<!-- select -->
+<select multiple="multiple">
+	<option value="apple">사과</option>
+	<option value="pear">배</option>
+	<option value="grape">포도</option>
+</select>
+
+<form action="moveValue.jsp">
+
+<input type="checkbox" name="hobby" value="패션">패션<br>
+<input type="checkbox" name="hobby" value="음악" checked="checked">음악<br>
+<input type="checkbox" name="hobby" value="게임">게임<br>
+
+<input type="submit" value="moveValue로 이동">
+
+</form>
+</body>
+</html>
